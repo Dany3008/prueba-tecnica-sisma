@@ -3,7 +3,6 @@ class beagle():
    
         pass
 class boxer():
-
         pass
 class welsh_terrier():
     pass
@@ -16,17 +15,17 @@ class working(boxer):
 class Dog(Hound,terrier,working,ABC):
     def _init_(self):
         pass
-    def nombre(self,nombre):
-        self.nombre=nombre      
+    @abstractmethod
+    def nombre(self):
+        pass     
     
    # def tipo(self):
     #    return "mamifero"
 
-class pet(Dog,ABC):
+class Pet(Dog,ABC):
     def _init_(self):
         pass
-    def dog(self, nombre):
-        pass
+    
        
 
 #La forma de saber a que método se llama 
@@ -38,4 +37,4 @@ class pet(Dog,ABC):
 #  de izquierda a derecha.
 #x=pet("hola")
 #print (Dog.__mro__)
-print (pet.__mro__)
+#print (pet.__mro__)
