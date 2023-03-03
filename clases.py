@@ -1,13 +1,12 @@
 from abc import ABC,abstractmethod
 class beagle():
-    def _init_(self):
+   
         pass
 class boxer():
-    def _init_(self):
+
         pass
 class welsh_terrier():
-    def _init_(self):
-        pass
+    pass
 class Hound(beagle):
     pass
 class terrier(welsh_terrier):
