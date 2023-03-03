@@ -1,0 +1,5 @@
+SELECT `folder`.`Folderid`, `folder`.`AccessType`, `employee`.`EmpName`, `departament`.`DeptName`, `country`.`CountryName`, `country`.`Continent`
+FROM `folder` 
+	LEFT JOIN `employee` ON `folder`.`Empid` = `employee`.`EmpiD` 
+	LEFT JOIN `departament` ON `departament`.`Departamentid` = `employee`.`Deptid` 
+	LEFT JOIN `country` ON `departament`.`Countryid` = `country`.`Countryid`;
